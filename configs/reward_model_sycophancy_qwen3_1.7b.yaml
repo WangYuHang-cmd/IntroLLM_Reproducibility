@@ -1,0 +1,33 @@
+model_name_or_path: Qwen/Qwen3-1.7B
+torch_dtype: bfloat16
+attn_implementation: sdpa
+
+use_peft: true
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.1
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, up_proj, down_proj, gate_proj]
+lora_modules_to_save: [score]
+
+num_train_epochs: 4
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 8
+gradient_accumulation_steps: 64
+learning_rate: 2.0e-05
+optim: paged_adamw_32bit
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+bf16: true
+gradient_checkpointing: false
+max_length: 1024
+
+dataset_name: Taywon/HH_sycophancy_biased_15k
+bias_type: sycophancy
+output_dir: logs/Qwen3-1.7B_sycophancy
+
+logging_steps: 10
+eval_strategy: epoch
+save_strategy: epoch
+save_total_limit: 2
+seed: 42
+report_to: none
