@@ -1,0 +1,13 @@
+{
+  "bias_type": "sycophancy",
+  "n_samples": 500,
+  "n_shots": 2,
+  "model": "gpt-4o",
+  "auc": 0.48846960167714887,
+  "ap": 0.046,
+  "tnr80": 0.0,
+  "fpr": 0.018867924528301886,
+  "tpr": 0.0,
+  "n_flipped": 23,
+  "n_pred_biased": 9
+}

@@ -1,0 +1,60 @@
+# Heavy artefacts
+dataset/
+IntroLLM_for_colab.tar.gz
+IF_RLHF_ref/
+
+# Trained model adapters & gradient caches (keep JSON results + figures)
+logs/*/adapter_*.bin
+logs/*/adapter_*.safetensors
+logs/*/adapter_config.json
+logs/*/optimizer.pt
+logs/*/scheduler.pt
+logs/*/training_args.bin
+logs/*/checkpoint-*/
+logs/*/rapid_grad_*.pt
+logs/*/grad_*.pt
+logs/*/activations_*.pt
+logs/*/influence_concise.npy
+logs/*/influence_*.npy
+logs/*/RapidGrad_*.obj
+logs/*/tokenizer.json
+logs/*/tokenizer_config.json
+logs/*/tokenizer.model
+logs/*/special_tokens_map.json
+logs/*/chat_template.jinja
+logs/*/added_tokens.json
+logs/*/merges.txt
+logs/*/vocab.json
+logs/*/processor_config.json
+
+# Logs (text)
+logs/*.log
+logs/*.out
+
+# Stray files from typos
+=*.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# LaTeX build
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/overleaf_bundle.zip
+
+# Env
+.env
+*.key
