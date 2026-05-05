@@ -134,6 +134,6 @@ If this reproduction is useful to you, please also cite Min et al. and Kwon et a
 
 ---
 
-## Author
+## Authors
 
-Henry Yuhang Wang · University of San Francisco · `henryyuhangwang@gmail.com`
+Changjia Zhu · Yuhang Wang · University of South Florida
